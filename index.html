@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yash Dabade — Software Development Intern</title>
+<meta name="description" content="Portfolio of Yash Pravinkumar Dabade, Software Development Intern &amp; final-year Computer Engineering student." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-[var(--bg)] text-[var(--text)]">
+
+<div id="loader" class="loader-screen">
+  <p class="text-xs tracking-[0.35em] uppercase text-muted">Loading Experience</p>
+  <div class="loader-bar"><div id="loader-fill" class="loader-fill"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="#top" class="font-serif-premium text-2xl tracking-tight">Y.</a>
+
+    <div class="hidden md:flex items-center gap-9 text-[11px] uppercase text-muted">
+      <a href="#top" class="nav-link active hover:text-white">Home</a>
+      <a href="#about" class="nav-link hover:text-white">About</a>
+      <a href="#skills" class="nav-link hover:text-white">Skills</a>
+      <a href="#projects" class="nav-link hover:text-white">Projects</a>
+      <a href="#achievements" class="nav-link hover:text-white">Achievements</a>
+      <a href="#contact" class="nav-link hover:text-white">Contact</a>
+    </div>
+
+    <a href="mailto:yashdabade2005@gmail.com"
+       class="hidden md:inline-flex btn-solid items-center gap-2 rounded-full px-5 py-2.5 text-[11px] uppercase tracking-[0.14em] font-medium">
+      Let's Talk
+      <span aria-hidden="true">&#8594;</span>
+    </a>
+
+    <button id="nav-toggle" class="md:hidden text-white" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-[var(--bg-soft)] border-t border-soft px-6 py-6 flex flex-col gap-5 text-sm uppercase tracking-widest text-muted">
+    <a href="#top" class="hover:text-white">Home</a>
+    <a href="#about" class="hover:text-white">About</a>
+    <a href="#skills" class="hover:text-white">Skills</a>
+    <a href="#projects" class="hover:text-white">Projects</a>
+    <a href="#achievements" class="hover:text-white">Achievements</a>
+    <a href="#contact" class="hover:text-white">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO SCROLLYTELLING -->
+<div id="top"></div>
+<div id="hero-scroll" class="scrollytell-wrapper">
+  <div class="scrollytell-sticky">
+    <canvas id="hero-canvas" class="scrollytell-canvas"></canvas>
+    <div class="scrollytell-overlay"></div>
+    <div class="scrim-bottom"></div>
+    <div class="scrim-left"></div>
+
+    <div class="relative z-10 h-full max-w-7xl mx-auto px-6 md:px-10 flex flex-col justify-center">
+      <div class="max-w-xl stagger is-visible">
+        <p class="text-xs md:text-sm uppercase tracking-[0.35em] text-accent-orange mb-5">Hello, I'm Yash</p>
+        <h1 class="font-serif-premium text-4xl sm:text-5xl md:text-6xl leading-[1.08] mb-6">
+          Software Development<br />
+          Intern Crafting Real<br />
+          World Digital Solutions
+        </h1>
+        <p class="text-muted text-base md:text-lg leading-relaxed mb-9 max-w-md">
+          Final-year Computer Engineering student who builds clean, functional web
+          applications — blending frontend craftsmanship with backend fundamentals
+          and AI-assisted development workflows.
+        </p>
+        <div class="flex items-center gap-6 flex-wrap">
+          <a href="#projects" class="btn-solid inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-xs uppercase tracking-[0.14em] font-medium">
+            View My Work <span aria-hidden="true">&#8594;</span>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted hover:text-white transition-colors">
+            Get In Touch <span aria-hidden="true">+</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-9 left-6 md:left-10 z-10 flex items-center gap-3 text-[11px] uppercase tracking-[0.2em] text-muted">
+      <span class="scroll-chevron">&#8595;</span> Scroll Down
+    </div>
+
+    <div class="absolute bottom-9 right-6 md:right-10 z-10 glass-card rounded-2xl px-6 py-5 max-w-[260px]">
+      <p class="flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-muted mb-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span> Available for Internship
+      </p>
+      <p class="text-sm text-[var(--text)] leading-snug mb-3">
+        Open to software development internships &amp; entry-level full-stack roles.
+      </p>
+      <a href="#contact" class="text-[11px] uppercase tracking-[0.14em] text-accent-orange hover:underline">
+        Schedule a Call &#8594;
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="seam-blend"></div>
+
+<!-- SECOND SCROLLYTELLING -->
+<div id="next-scroll" class="scrollytell-wrapper short">
+  <div class="scrollytell-sticky">
+    <canvas id="next-canvas" class="scrollytell-canvas"></canvas>
+    <div class="scrollytell-overlay"></div>
+    <div class="scrim-right"></div>
+
+    <div class="relative z-10 h-full max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-end">
+      <div class="iris-reveal max-w-md text-right md:text-left bg-[rgba(3,4,5,0.35)] md:bg-transparent rounded-3xl p-2">
+        <p class="text-xs uppercase tracking-[0.35em] text-accent-blue mb-5">Behind The Code</p>
+        <h2 class="font-serif-premium text-3xl md:text-5xl leading-[1.1] mb-6">
+          Building Digital<br /> Solutions With <span class="text-accent-orange italic">Purpose.</span>
+        </h2>
+        <p class="text-muted leading-relaxed mb-8">
+          I'm a final-year Computer Engineering student at Savitribai Phule Pune
+          University with a CGPA of 8.99/10. I've contributed to real-world Android
+          WebView deployments, explored AI-assisted development workflows, and I'm
+          currently pursuing my Certified Ethical Hacking (CEH) certification.
+        </p>
+        <div class="flex md:justify-start justify-end gap-8 mb-8 text-sm">
+          <div>
+            <p class="font-serif-premium text-2xl text-accent-amber">8.99</p>
+            <p class="text-[10px] uppercase tracking-widest text-muted">CGPA / 10</p>
+          </div>
+          <div>
+            <p class="font-serif-premium text-2xl text-accent-amber">Final Yr</p>
+            <p class="text-[10px] uppercase tracking-widest text-muted">Comp. Engg.</p>
+          </div>
+          <div>
+            <p class="font-serif-premium text-2xl text-accent-amber">Pune</p>
+            <p class="text-[10px] uppercase tracking-widest text-muted">India</p>
+          </div>
+        </div>
+        <a href="#about" class="btn-ghost inline-flex items-center gap-2 rounded-full px-7 py-3 text-xs uppercase tracking-[0.14em]">
+          More About Me <span aria-hidden="true">&#8594;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="relative bg-[var(--bg)] py-28 md:py-36 px-6 md:px-10">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+    <div class="fade-up">
+      <p class="text-xs uppercase tracking-[0.35em] text-accent-orange mb-4">About Me</p>
+      <h2 class="font-serif-premium text-3xl md:text-4xl mb-6 leading-tight">
+        Curious engineer, practical builder.
+      </h2>
+      <p class="text-muted leading-relaxed mb-5">
+        I'm Yash Pravinkumar Dabade, a final-year Computer Engineering student at
+        Savitribai Phule Pune University. I enjoy turning ideas into working
+        software — from full-stack deployments to AI-assisted landing pages —
+        and I'm equally comfortable exploring backend fundamentals as I am
+        polishing pixel-level frontend details.
+      </p>
+      <p class="text-muted leading-relaxed mb-10">
+        During my internship at Bonaventure Systems, I contributed to a fast,
+        cost-effective approach for deploying static, React.js and Angular
+        applications using Android WebView — gaining hands-on exposure to real
+        deployment and mobile-integration workflows. Outside of internships, I
+        build personal projects to sharpen my frontend craft and experiment with
+        structured prompting for AI-assisted development.
+      </p>
+      <a href="#contact" class="btn-solid inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-xs uppercase tracking-[0.14em] font-medium">
+        Let's Connect <span aria-hidden="true">&#8594;</span>
+      </a>
+    </div>
+
+    <div class="fade-up grid gap-5">
+      <div class="bg-surface border border-soft rounded-2xl p-7">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-muted mb-2">Education</p>
+        <p class="font-serif-premium text-xl mb-1">B.E. Computer Engineering</p>
+        <p class="text-muted text-sm mb-4">Savitribai Phule Pune University, Pune — Final Year, Pursuing</p>
+        <div class="grid grid-cols-3 gap-4 border-t border-soft pt-4">
+          <div>
+            <p class="text-accent-amber font-serif-premium text-lg">8.99</p>
+            <p class="text-[10px] uppercase tracking-widest text-muted">CGPA</p>
+          </div>
+          <div>
+            <p class="text-accent-amber font-serif-premium text-lg">63.33%</p>
+            <p class="text-[10px] uppercase tracking-widest text-muted">HSC 12th</p>
+          </div>
+          <div>
+            <p class="text-accent-amber font-serif-premium text-lg">90.6%</p>
+            <p class="text-[10px] uppercase tracking-widest text-muted">CBSE 10th</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-surface border border-soft rounded-2xl p-7">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-muted mb-2">Currently</p>
+        <p class="font-serif-premium text-xl mb-1">Pursuing CEH Certification</p>
+        <p class="text-muted text-sm">
+          Deepening my knowledge of cyber security fundamentals, tools, and
+          networking while continuing to explore practical software-development workflows.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="relative bg-[var(--bg-soft)] py-28 md:py-36 px-6 md:px-10 border-y border-soft">
+  <div class="max-w-7xl mx-auto">
+    <div class="fade-up mb-16 max-w-xl">
+      <p class="text-xs uppercase tracking-[0.35em] text-accent-orange mb-4">Skills &amp; Tools</p>
+      <h2 class="font-serif-premium text-3xl md:text-4xl leading-tight">
+        The stack I build with.
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+      <div class="bg-surface border border-soft rounded-2xl p-7 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-blue mb-4">Frameworks &amp; Tech</p>
+        <ul class="text-sm text-muted space-y-2.5">
+          <li>.NET Core</li>
+          <li>ASP.NET MVC</li>
+          <li>Android WebView</li>
+        </ul>
+      </div>
+      <div class="bg-surface border border-soft rounded-2xl p-7 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-blue mb-4">Languages &amp; DB</p>
+        <ul class="text-sm text-muted space-y-2.5">
+          <li>C#</li>
+          <li>JavaScript</li>
+          <li>HTML5 &amp; CSS3</li>
+          <li>MongoDB</li>
+          <li>SQL Basics</li>
+        </ul>
+      </div>
+      <div class="bg-surface border border-soft rounded-2xl p-7 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-blue mb-4">Security Fundamentals</p>
+        <ul class="text-sm text-muted space-y-2.5">
+          <li>Cyber Security Basics</li>
+          <li>Security Tools</li>
+          <li>Linux OS</li>
+          <li>Networking</li>
+        </ul>
+      </div>
+      <div class="bg-surface border border-soft rounded-2xl p-7 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-blue mb-4">Tools</p>
+        <ul class="text-sm text-muted space-y-2.5">
+          <li>Visual Studio 2022</li>
+          <li>VS Code</li>
+          <li>Git (Basics)</li>
+          <li>Claude Code &amp; Gemini</li>
+          <li>CISCO Packet Tracer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="relative bg-[var(--bg)] py-28 md:py-36 px-6 md:px-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="fade-up flex items-end justify-between flex-wrap gap-6 mb-16">
+      <div class="max-w-xl">
+        <p class="text-xs uppercase tracking-[0.35em] text-accent-orange mb-4">Selected Work</p>
+        <h2 class="font-serif-premium text-3xl md:text-4xl leading-tight">Projects &amp; Experience.</h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 stagger">
+      <div class="bg-surface border border-soft rounded-2xl p-8 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-amber mb-3">Internship · Bonaventure Systems</p>
+        <h3 class="font-serif-premium text-2xl mb-3">Full-Stack App Deployment via Android WebView</h3>
+        <p class="text-muted text-sm leading-relaxed mb-5">
+          Contributed to a fast, cost-effective approach for deploying static,
+          React.js and Angular applications using Android WebView, gaining
+          practical exposure to deployment and mobile integration.
+        </p>
+        <a href="https://www.bonaventuresystems.com/" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-[0.14em] text-accent-orange hover:underline">
+          Bonaventure Systems &#8594;
+        </a>
+      </div>
+
+      <div class="bg-surface border border-soft rounded-2xl p-8 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-amber mb-3">Personal Learning Project</p>
+        <h3 class="font-serif-premium text-2xl mb-3">AI-Assisted Landing Page (Vibe Coding)</h3>
+        <p class="text-muted text-sm leading-relaxed mb-5">
+          Built landing pages while exploring AI-assisted development workflows
+          with Claude Code, Gemini, VS Code and video-to-frame tools — focused on
+          rapid prototyping and layout craft.
+        </p>
+        <a href="https://yashdabade.github.io/Sample-1/" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-[0.14em] text-accent-orange hover:underline">
+          View Live Project &#8594;
+        </a>
+      </div>
+
+      <div class="bg-surface border border-soft rounded-2xl p-8 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-amber mb-3">Personal Learning Initiative</p>
+        <h3 class="font-serif-premium text-2xl mb-3">Meta Prompting</h3>
+        <p class="text-muted text-sm leading-relaxed">
+          Created structured prompts for complex tasks and explored ways to
+          improve the relevance and consistency of AI-generated output — applied
+          to coding, problem-solving and learning workflows.
+        </p>
+      </div>
+
+      <div class="bg-surface border border-soft rounded-2xl p-8 card-hover">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-accent-amber mb-3">Frontend Project</p>
+        <h3 class="font-serif-premium text-2xl mb-3">Coffee Shop Website</h3>
+        <p class="text-muted text-sm leading-relaxed mb-5">
+          Developed a basic website using HTML5, CSS3 and JavaScript to
+          strengthen frontend fundamentals — page structure, styling,
+          navigation and simple browser-based interactions.
+        </p>
+        <a href="https://yashdabade.github.io/coffee-website/" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-[0.14em] text-accent-orange hover:underline">
+          View Live Project &#8594;
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="relative bg-[var(--bg-soft)] py-28 md:py-36 px-6 md:px-10 border-y border-soft">
+  <div class="max-w-7xl mx-auto">
+    <div class="fade-up mb-16 max-w-xl">
+      <p class="text-xs uppercase tracking-[0.35em] text-accent-orange mb-4">Milestones</p>
+      <h2 class="font-serif-premium text-3xl md:text-4xl leading-tight">Achievements.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-x-12 gap-y-8 stagger">
+      <div class="flex gap-4">
+        <span class="font-serif-premium text-accent-amber text-xl">01</span>
+        <p class="text-muted text-sm leading-relaxed">
+          Completed a third-year software development internship at
+          <span class="text-white">Bonaventure Systems</span>, contributing to
+          an Android WebView deployment solution.
+        </p>
+      </div>
+      <div class="flex gap-4">
+        <span class="font-serif-premium text-accent-amber text-xl">02</span>
+        <p class="text-muted text-sm leading-relaxed">
+          Built personal projects to strengthen frontend development,
+          AI-assisted coding, and prompt-design skills.
+        </p>
+      </div>
+      <div class="flex gap-4">
+        <span class="font-serif-premium text-accent-amber text-xl">03</span>
+        <p class="text-muted text-sm leading-relaxed">
+          Continues to explore software development tools and practical
+          application-building workflows.
+        </p>
+      </div>
+      <div class="flex gap-4">
+        <span class="font-serif-premium text-accent-amber text-xl">04</span>
+        <p class="text-muted text-sm leading-relaxed">
+          Pursuing <span class="text-white">Certified Ethical Hacking (CEH)</span> certification.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative bg-[var(--bg)] py-28 md:py-36 px-6 md:px-10">
+  <div class="max-w-4xl mx-auto text-center fade-up">
+    <p class="text-xs uppercase tracking-[0.35em] text-accent-orange mb-5">Get In Touch</p>
+    <h2 class="font-serif-premium text-3xl md:text-5xl leading-tight mb-8">
+      Let's build something<br class="hidden sm:block" /> worth shipping.
+    </h2>
+    <p class="text-muted leading-relaxed mb-10 max-w-xl mx-auto">
+      Open to software development internships and entry-level full-stack
+      opportunities. Reach out and let's talk about how I can contribute.
+    </p>
+    <div class="flex flex-wrap justify-center gap-5 mb-12">
+      <a href="mailto:yashdabade2005@gmail.com" class="btn-solid inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-xs uppercase tracking-[0.14em] font-medium">
+        yashdabade2005@gmail.com
+      </a>
+      <a href="tel:+919168462830" class="btn-ghost inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-xs uppercase tracking-[0.14em]">
+        +91 91684 62830
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-soft py-10 px-6 md:px-10">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-muted text-xs tracking-wide">
+    <p class="font-serif-premium text-lg text-white">Y.</p>
+    <p>&copy; <span id="year"></span> Yash Pravinkumar Dabade. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
